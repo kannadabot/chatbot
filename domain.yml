@@ -1,0 +1,42 @@
+version: "2.0"
+
+intents:
+  - greet
+  # - my_name:
+  #     use_entities:
+  #       - name
+  # - my_number:
+  #     use_entities:
+  #       - number
+# entities:
+#   - name
+#   - number
+# slots:
+#   name:
+#     type: text
+#   number:
+#     type: text
+actions:
+  - utter_greet
+  # - utter_detailsrequest
+  # - utter_phonenumberrequest
+  # - utter_thanks
+
+
+responses:
+  utter_greet:
+  - text: "ಸ್ಯಾಮ್ಸಂಗ್ ಸಹಾಯ ಕೇಂದ್ರಕ್ಕೆ ಸ್ವಾಗತ."
+  # utter_detailsrequest:
+  # - text: "ದಯವಿಟ್ಟು ನಿಮ್ಮ ವಿವರಗಳೊಂದಿಗೆ ನಮಗೆ ಸಹಾಯ ಮಾಡಿ\nನಿಮ್ಮ ಹೆಸರು:\n"
+  # utter_phonenumberrequest:
+  # - text: "ನಿಮ್ಮ ಮೊಬೈಲ್ ನಂಬರ್:\n"
+  # utter_thanks:
+  # - text: "ನಿಮ್ಮ ಮಾಹಿತಿಗೆ ಧನ್ಯವಾದಗಳು, ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?"
+
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+# rasa run -m models --enable-api --cors "*" --debug

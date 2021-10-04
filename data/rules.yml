@@ -1,0 +1,9 @@
+version: "2.0"
+
+rules:
+
+- rule: greet when user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+

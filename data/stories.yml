@@ -1,0 +1,23 @@
+version: "2.0"
+
+stories:
+
+- story: intro
+  steps:
+  - intent: greet
+  - action: utter_greet
+  # - action: utter_detailsrequest
+  # - intent: my_name
+  #   entities: 
+  #   - name: "ಉಷಾ"
+  # - slot_was_set:
+  #     - name: "ಉಷಾ"
+  # - action: utter_phonenumberrequest
+  # - intent: my_number
+  #   entities:
+  #   - number: "9986008150"
+  # - slot_was_set:
+  #     - number: "9986008150"
+  # - action: utter_thanks
+
+
